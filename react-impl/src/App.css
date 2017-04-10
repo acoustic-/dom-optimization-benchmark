@@ -1,0 +1,80 @@
+/*****************************
+  ROW ITEM RELATED STYLES
+******************************/
+
+div.container {
+    display: flex;
+    width: 100%;
+    flex-flow: row wrap;
+    -webkit-flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 215px;
+}
+
+div.header  {
+    margin-bottom: 20px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    background-color: white;
+    overflow: auto;
+}
+
+div.btn-row {
+    margin: 10px;
+}
+
+div {
+    font-family: 'Cousine', monospace;
+    font-size: 20px;
+    text-align: center;
+}
+
+span.subheader {
+    color: #676565;
+    font-size: 16px;
+}
+
+h1 {
+    margin-bottom: 2px;
+}
+
+/***********************
+  MEDIA QUERIES
+************************/
+
+@media screen and (max-width: 560px) {
+    h1 { font-size: 30px !important }
+    .btn:not(.add-btn) { font-size: 12px; padding: 8px 15px !important}
+
+    div.container {
+      margin-top: 175px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    div.container {
+      margin-top: 210px;
+    }
+}
+
+@media screen and (max-width: 330px) {
+    div.container {
+      margin-top: 245px;
+    }
+}
+
+@media screen and (max-width: 293px) {
+    div.container {
+      margin-top: 281px;
+    }
+}
+
+/****************************
+      REACT ONLY STYLE
+ ***************************/
+ .btn-row > button {
+    margin-left: 12px;
+}

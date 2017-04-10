@@ -1,24 +1,24 @@
-    <div id="root">
-        <div class="header">
-            <h1>Shadow DOM Imp&shy;le&shy;ment&shy;ation</h1>
-            <span class="subheader">~ with Angular 2 ~</span>
-            <div class="btn-row">
-                <button class="btn btn-primary outline" id="update-all" (click)="updateAll()">Update All!</button>
-                <button class="btn btn-primary outline" id="update-part" (click)="updateSome()">Update Part!</button>
-                <button class="btn btn-primary outline" id="remove" (click)="remove()">Remove!</button>
-            </div>
-            <div class="btn-row">
-                <button class="btn btn-primary outline add-btn" (click)="add(1000)">1000</button>
-                <button class="btn btn-primary outline add-btn" (click)="add(3000)">3000</button>
-                <button class="btn btn-primary outline add-btn" (click)="add(6000)">6000</button>
-                <button class="btn btn-primary outline add-btn" (click)="add(10000)">10000</button>
-                <button class="btn btn-primary outline add-btn" (click)="add(30000)">30000</button>
-                <button class="btn btn-primary outline add-btn" (click)="add(60000)">60000</button>
-                <button class="btn btn-primary outline add-btn" (click)="add(100000)">100000</button>
-            </div>
-        </div>
-
-        <div class="container" id="container-for-row-items">
-          <app-row-item #rowItem *ngFor="let item of items"></app-row-item>
-        </div>
+<div id="root">
+  <div class="header">
+    <h1>Shadow DOM Imp&shy;le&shy;ment&shy;ation</h1>
+    <span class="subheader">~ with Angular 2 ~</span>
+    <div class="btn-row">
+      <button class="btn btn-primary outline" id="update-all" (click)="updateAll()">Update All!</button>
+      <button class="btn btn-primary outline" id="update-part" (click)="updateSome()">Update Part!</button>
+      <button class="btn btn-primary outline" id="remove" (click)="remove()">Remove!</button>
     </div>
+    <div class="btn-row">
+      <button class="btn btn-primary outline add-btn" (click)="add(1000)">1000</button>
+      <button class="btn btn-primary outline add-btn" (click)="add(3000)">3000</button>
+      <button class="btn btn-primary outline add-btn" (click)="add(6000)">6000</button>
+      <button class="btn btn-primary outline add-btn" (click)="add(10000)">10000</button>
+      <button class="btn btn-primary outline add-btn" (click)="add(30000)">30000</button>
+      <button class="btn btn-primary outline add-btn" (click)="add(60000)">60000</button>
+      <button class="btn btn-primary outline add-btn" (click)="add(100000)">100000</button>
+    </div>
+  </div>
+
+  <div class="container" id="container-for-row-items">
+    <app-row-item #rowItem *ngFor="let item of items"></app-row-item>
+  </div>
+</div>
