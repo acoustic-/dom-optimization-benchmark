@@ -1,0 +1,54 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>DOM optimization benchmark - Regular</title>
+    <meta name="description" content="The Dom Optimization Benchmark">
+    <meta name="author" content="Jari Kuisma">
+
+    <!--<link rel="stylesheet" href="css/styles.css?v=1.0">-->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="shortcut icon" href="favicon.png" />
+    <script src="js/jquery-3.2.0.min.js"></script>
+    <script src="js/dom-benchmark.js"></script>
+
+    <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+    <link href="https://fonts.googleapis.com/css?family=Cousine" rel="stylesheet">
+</head>
+
+<body>
+    <div id="root">
+        <div class="header">
+            <h1>Regular DOM Imp&shy;le&shy;ment&shy;ation</h1>
+            <span class="subheader">~ with js and jQuery ~</span>
+            <div class="btn-row">
+                <button class="btn btn-primary outline" id="update-all">Update All!</button>
+                <button class="btn btn-primary outline" id="update-part">Update Part!</button>
+                <button class="btn btn-primary outline" id="remove">Remove!</button>
+            </div>
+            <div class="btn-row">
+                <button class="btn btn-primary outline add-btn" value="1000">1000</button>
+                <button class="btn btn-primary outline add-btn" value="3000">3000</button>
+                <button class="btn btn-primary outline add-btn" value="6000">6000</button>
+                <button class="btn btn-primary outline add-btn" value="10000">10000</button>
+                <button class="btn btn-primary outline add-btn" value="30000">30000</button>
+                <button class="btn btn-primary outline add-btn" value="60000">60000</button>
+                <button class="btn btn-primary outline add-btn" value="60000">100000</button>
+            </div>
+        </div>
+
+        <div class="container" id="container-for-row-items">
+        </div>
+    </div>
+    <template id="row-item-template">
+        <div class="row-item"></div>
+    </template>
+
+</body>
+
+</html>
