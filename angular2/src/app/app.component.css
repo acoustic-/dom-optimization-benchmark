@@ -162,14 +162,3 @@ span.subheader {
 h1 {
     margin-bottom: 2px;
 }
-
-.row-item {
-    font-family: 'Cousine', monospace;
-    font-size: 10px;
-    text-align: center;
-    border-radius: 50%;
-    display: flex;
-    vertical-align: middle;
-    align-items: center;
-    justify-content: center;
-}

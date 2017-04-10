@@ -2,9 +2,7 @@ $(function () {
   /**
    * Row Item code - start
    */
-  chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
-  stringLength = 1;
-
+  
   function update(item) {
     item.html(randomContent());
     item.css('backgroundColor', generateColor());
@@ -21,9 +19,11 @@ $(function () {
   }
 
   function randomContent() {
-    let content = "";
-    for (var i = 0; i < this.stringLength; ++i) {
-      content += this.chars.charAt(Math.floor(Math.random() * this.chars.length));
+    var chars = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+    var stringLength = 1;
+    var content = "";
+    for (var i = 0; i < stringLength; ++i) {
+      content += chars.charAt(Math.floor(Math.random() * chars.length));
     }
     return content;
   }
