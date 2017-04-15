@@ -1,21 +1,19 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ViewEncapsulation } from '@angular/core';
 
 @Component({
   selector: 'app-row-item',
   templateUrl: './row-item.component.html',
-  styleUrls: ['./row-item.component.css']
+  styleUrls: ['./row-item.component.css'],
+  encapsulation: ViewEncapsulation.Native
 })
-export class RowItemComponent implements OnInit {
+export class RowItemComponent {
 
-  content: string
-  color: string
-  size: string
+  private content: string
+  private color: string
+  private size: string
 
   constructor() { 
     this.update();
-  }
-
-  ngOnInit() {
   }
 
   update() {

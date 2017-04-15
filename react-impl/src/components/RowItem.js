@@ -31,7 +31,6 @@ class RowItem extends Component {
         this.style = clone;
         this.style.backgroundColor = this.generateColor();
         this.size = this.getRandomSize();
-        this.render();
     }
 
     updateSome() {

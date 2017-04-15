@@ -63,31 +63,23 @@ class App extends Component {
 
   add(count) {
     this.setState({count: count})
-    this.render();
   }
 
   updateAll() {
     this.refsToArray(this, "RowItem").forEach( (i) => i.update() );
-    this.afterOperation();
+    this.scrollToBottom();
   }
 
   updateSome() {
     this.refsToArray(this, "RowItem").forEach( (i) => i.updateSome() );
-    this.afterOperation();
-  }
-
-  remove() {
-    this.setState({count: 0})
-    this.afterOperation();
-  }
-
-  afterOperation() {
-    this.render();
     this.scrollToBottom();
   }
 
+  remove() {
+    this.setState({count: 0});
+  }
+
   componentDidUpdate() {
-    console.log("componentDidUpdate")
     this.scrollToBottom();
   }
 

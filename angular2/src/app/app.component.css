@@ -90,7 +90,7 @@
 }
 
 /***********************
-  MEDIA QUERIES
+     MEDIA QUERIES
 ************************/
 
 @media screen and (max-width: 560px) {
@@ -121,7 +121,7 @@
 }
 
 /*****************************
-  ROW ITEM RELATED STYLES
+  APP COMPONENT RELATED STYLES
 ******************************/
 
 div.container {
